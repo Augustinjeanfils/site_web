@@ -15,7 +15,11 @@ body{
     background: rgb(109, 196, 239);
     display: flex;
     align-items: center;
-    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 0;
+    margin: 80px;
+    
 }
 .logo img{
     width: 120px;
@@ -40,6 +44,7 @@ nav a:hover{
     color: black;
 }
 .cart-box {
+    /* display: inline-block;*/
     display: inline-block;
     position: relative;
     margin-left: 15px;
@@ -197,6 +202,19 @@ nav a:hover{
 .header-section{
     margin-top: -20px;
     background: radial-gradient(#fff,#fff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-section .conntenair{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.header-section .row{
+    flex:1;
+
 }
 
 
@@ -458,3 +476,57 @@ button:hover{
 .conntenair p{
     margin-bottom: 250px;
 }
+
+
+/* --- Responsive Mobile --- */
+@media only screen and (max-width: 768px) {
+
+
+
+        .navbar {
+           flex-direction: column;
+            margin: 0; /* Enlève la grande marge sur mobile */
+            padding: 15px;
+        }
+        .logo {
+            margin-bottom: 15px;
+        }
+        nav {
+            width: 100%;
+            text-align: center;
+        }
+        nav ul {
+            display: block;
+            padding: 0;
+        }
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
+        .cart-box {
+            margin-top: 15px;
+            margin-left: 0;
+        }
+        .row {
+            flex-direction: column;
+        }
+        .col-2, .col-3, .clo-4 {
+            flex-basis: 100%;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .col-2 h1 {
+            font-size: 24px;
+        }
+        .contact-info, .contact-wrapper {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        .cart-sidebar {
+            width: 100%;
+        }
+        .conntenair p {
+            margin-bottom: 50px;
+        }
+
+    }  
