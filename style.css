@@ -166,7 +166,7 @@ nav a:hover{
 .row{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 
 }
 .col-2{
@@ -504,7 +504,7 @@ button:hover{
             margin: 10px 0;
         }
         .cart-box {
-            margin-top: 15px;
+            margin-top: 10px;
             margin-left: 0;
         }
         .row {
@@ -516,7 +516,7 @@ button:hover{
             margin-bottom: 30px;
         }
         .col-2 h1 {
-            font-size: 24px;
+            font-size: 14px;
         }
         .contact-info, .contact-wrapper {
             grid-template-columns: 1fr;
@@ -526,7 +526,7 @@ button:hover{
             width: 100%;
         }
         .conntenair p {
-            margin-bottom: 50px;
+            margin-bottom: 20px;
         }
 
     }  
